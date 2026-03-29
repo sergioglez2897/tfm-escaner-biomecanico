@@ -123,6 +123,7 @@ with tab2:
     with col_izq:
         st.markdown("### 1. Sube tu vídeo")
         archivo_video = st.file_uploader("Selecciona tu vídeo (.mp4)", type=['mp4', 'mov'])
+        st.caption("ℹ️ *Nota técnica: Para una medición precisa de la velocidad de muñeca (Lag), es imprescindible que el vídeo esté grabado a cámara lenta (Slow-Mo).*")
         rotacion_elegida = st.selectbox("¿El vídeo grabado sale girado o al revés?", 
                                       ["Ninguna", "Rotar 90º a la Derecha ↻", "Rotar 90º a la Izquierda ↺", "Rotar 180º (Al revés)"])
         
